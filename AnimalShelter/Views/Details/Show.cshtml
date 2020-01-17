@@ -1,0 +1,23 @@
+@{
+  Layout = "_Layout";
+}
+<center>
+<h1><b><i>@Model["typeClass"].Description</i></b> Details</h1>
+<br>
+<h3>Namedor: <b>@Model["typeClass"].Name</b></h3>
+<h3>Order of: <b>@Model["detail"].Gender</b></h3>
+<h3>Quantity: <b>@Model["detail"].Breed</b></h3>
+<h3>Date: <b>@Model["detail"].AdmittDate</b></h3>
+<br>
+<br>
+@* <p><a href='/vendors/@Model["vendor"].Id/order/@Model["order"].Id/orders/new'>Edit Order</a></p> *@
+
+@* <p><a href='/vendors/@Model["vendor"].Id/order/@Model["order"].Id/delete'>Delete Order</a></p> *@
+
+<form action="/details/delete" method="post">
+  <button class="btn btn-success" type='submit'>Delete Order</button>
+</form>
+<br>
+<p><a href='/typesClass/@Model["vendor"].Id'>Order Overview</a></p>
+
+</center>

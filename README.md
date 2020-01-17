@@ -1,9 +1,9 @@
-# To To List : The C# Web App
-### By Rochelle Roberts
+# Animal Shelter : A C# Web App
+### Uriel Gonzalez
 -----
 
 ## Description
-* To Do List C# Web App
+* Animal Shelter C# Web App
 
 ## Technologies Used
 * C#

@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+<center>
+<h1 style="margin-left: 40px">Add New Animal To Type: <strong><i>@Model.Name</i></strong></h1>
+<br>
+<form style="margin-left: 40px" action="/typesClass/@Model.Id/details" method="post">
+  <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+  <label for="detailDescription">Animal Name</label>
+  <input id="detailDescription" name="detailName" type="text">
+
+  <label for="genderName">Gender</label>
+  <input id="genderName" name="genderName" type="text">
+
+  <label for="breedName">Breed</label>
+  <input id="breedName" name="breedName" type="text">
+
+  <label for="admittDateName">Admitted Date</label>
+  <input id="admittDateName" name="admittDateName" placeholder="mm/dd/yyyy" type="date">
+  <br>
+  <br>
+  <br>
+  <button class="btn btn-success" type='submit'>Add Animal</button>
+</form>
+</center>
